@@ -1,0 +1,18 @@
+{
+    "name": "hell0x/shorten",
+    "description": "Short link generation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hell0x",
+            "email": "327466897@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+	    "psr-4": {
+		    "Hell0x\\Shorten\\": "src/"
+	    }
+    }
+}
