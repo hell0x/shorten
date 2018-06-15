@@ -20,7 +20,10 @@ class DefaultShortChains implements ShortUrl
         $info['password'] = $this->password;
         $info['urls'] = $urls;
         $ret = $this->GetJsonData($domain, $info);
-        echo json_encode($ret);
+        if(isset($ret->code) && $ret->code === 1)
+            return $ret->list;
+        else
+            return false;
     }
 
     /**
